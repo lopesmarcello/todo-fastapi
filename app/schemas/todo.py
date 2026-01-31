@@ -6,7 +6,7 @@ class TodoBase(BaseModel):
     description: Optional[str] = None 
 
 class TodoCreate(TodoBase):
-    pass
+    completed: bool = False
 
 class Todo(TodoBase):
     id: int
